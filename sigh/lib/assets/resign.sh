@@ -439,9 +439,9 @@ function resign {
         fi
     fi
 
-    if ! does_bundle_id_match "$PROVISION_BUNDLE_IDENTIFIER" "$BUNDLE_IDENTIFIER"; then
-        error "Bundle Identifier '$PROVISION_BUNDLE_IDENTIFIER' in provisioning profile '$NEW_PROVISION' does not match the Bundle Identifier '$BUNDLE_IDENTIFIER' for application '$APP_PATH'."
-    fi
+   # if ! does_bundle_id_match "$PROVISION_BUNDLE_IDENTIFIER" "$BUNDLE_IDENTIFIER"; then
+   #     error "Bundle Identifier '$PROVISION_BUNDLE_IDENTIFIER' in provisioning profile '$NEW_PROVISION' does not match the Bundle Identifier '$BUNDLE_IDENTIFIER' for application '$APP_PATH'."
+   # fi
 
     log "Current bundle identifier is: '$CURRENT_BUNDLE_IDENTIFIER'"
     log "New bundle identifier will be: '$BUNDLE_IDENTIFIER'"
